@@ -1,14 +1,8 @@
 # Sinka Barnabás Önéletrajz
 
-**Cím:**  
-3212, Gyöngyöshalász,  
-Gyöngyösi út 28
 
 **Születési dátum:**  
-Gyöngyös, 2003.10.06
-
-**Telefonszám:**  
-06203717901
+ 2003.10.06
 
 **Email:**  
 [sinkabarni13@gmail.com](mailto:sinkabarni13@gmail.com)
