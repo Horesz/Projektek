@@ -1,0 +1,52 @@
+Tesztjegyzőkönyv
+
+Teszteléseket végezte: Sándor Dániel
+
+Operációs rendszer: Windows 10
+
+Ebben a dokumentumban lesz felsorolva az elvégzett tesztek elvárásai és eredményei, illetve időpontjai (Alfa, Béta és Végleges verzió).
+
+## Alfa teszt
+
+| Vizsgálat                        | Tesztelés időpontja | Elvárás                                                                                                                  | Eredmény                                                                                         | Hibák                                               |
+|----------------------------------|---------------------|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| Regisztráció helytelen adatokkal | 2024.05.21.         | A rendszer hibaüzeneteket dob a felhasználó számára, amennyiben helytelen adatokat próbál szolgáltatni a regisztráció során. A felhasználó nem tud magának fiókot létrehozni, amíg a hibákat nem javította | A hibaüzenetek helyesen megjelennek, a regisztráció sikertelen lesz| Nem találtam hibát.       |
+| Regisztráció helyes adatokkal    | 2024.05.21.         | A rendszer a felhasználó adatait elmenti az adatbázisba létrehozva ezzel a fiókját és visszanavigál minket a főmenübe     | Az adatbázisban megjelennek a felhasználó fiókjának adatai, ezek után be tud jelentkezni a felületen | Nem találtam hibát.                                           |
+| Bejelentkezés helytelen adatokkal| 2024.05.21.         | A felhasználót a rendszer nem engedi belépni, felhívja a figyelmet a helytelen adatokra. A felhasználó nem éri el a regisztrált fiókok funkcióit | A rendszer nem engedi beléptetni a felhasználót, hibaüzenetet dob neki                           | Nem találtam hibát.                                            |
+| Bejelentkezés helyes adatokkal   | 2024.05.21.         | A felhasználó be tud lépni a fiókjába, ezzel elérve az összes olyan funkciót, ami a szerepkörébe tartozik                  | A felhasználót tovább engedi a beléptető felületen, és megjelennek az új funkciók, amelyeket használni tud | Nem találtam hibát.                                             |
+| Kijelentkezés                    | 2024.05.21.         | Bejelentkezett felhasználó ki tud lépni a fiókjából. Miután ezt megtette, újra be kell jelentkeznie a többi funkció eléréséhez | Gombra kattintva kidob a főmenübe, és újra a bejelentkezés lesz elérhető                          | Nem találtam hibát.                                             |
+| Kurzus létrehozó oldal           | 2024.05.21.         | Az oldal segítségével a felhasználó új kurzust tud létrehozni, melyeket a többi felhasználó is el tud érni, vagy ő maga más felhasználót hozzáadni. | A kurzus létrejön, navigáció által könnyen elérhető a létrehozónak vagy más felhasználónak       | A kurzus létrehozásakor néha hiba lépett fel, ha túl hosszú volt a kurzus neve |
+
+Következő tesztelésnél a többi funkció kerül vizsgálatra illetve elemzésre.
+
+## Béta teszt
+
+| Vizsgálat               | Tesztelés időpontja | Elvárás                                                                                                 | Eredmény                                                                                       | Hibák                                              |
+|-------------------------|---------------------|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| Kurzushoz rendelés      | 2024.05.21.          | A kurzushoz hozzá tudunk adni különböző felhasználókat, azonosító segítségével, így elérve, hogy lássák azok tartalmát | A helyes azonosító megadásával az adott felhasználó csatlakozik a kurzushoz                   | Nem találtam hibát.                                           |
+| Kurzus tartalom módosítása | 2024.05.21.          | A kurzust létrehozó személy különböző tartalmakat, leckéket tud a kurzusban létrehozni, megjeleníteni a kurzusban lévők részére | A kurzus tartalma minden hozzáadott felhasználónak helyesen és rendezetten megjelenik          | Nem találtam hibát. |
+| Kurzusra jelentkezés    | 2024.05.21.          | A felhasználók egy bizonyos kód segítségével különböző kurzusokra tudnak jelentkezni, hogy annak tartalmához hozzá tudjanak férni | Helyes kód beírásával a felhasználó jelentkezése megjelenik a kurzuson                         | Nem találtam hibát.                                            |
+| Kurzusról eltávolítás   | 2024.05.21.          | A kurzus létrehozójának lehetősége van más felhasználók eltávolítására egy adott kurzusról. Ezek után az adott felhasználó nem fogja tudni többé az adott kurzus tartalmát megtekinteni | Az eltávolítás után, az adott kurzus nem jelenik meg többé az eltávolított felhasználó kurzusai között, ahhoz nem fér hozzá | Az eltávolított felhasználó még néha kap értesítéseket a kurzusról |
+| Kurzusok megjelenítése  | 2024.05.21.          | Külön fülön, a felhasználónak lehetősége van, mind az éppen elérhető, mind a már felvett kurzusokat áttekinteni, azok között navigálni | Az oldal helyesen sorakoztatja fel mindkét esetben a kurzusokat                                | Nem találtam hibát.                                            |
+
+## Végleges teszt
+
+| Vizsgálat                        | Tesztelés időpontja | Elvárás                                                                                                                  | Eredmény                                                                                         | Hibák                                               |
+|----------------------------------|---------------------|--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| Regisztráció helytelen adatokkal | 2024.05.21.         | A rendszer hibaüzeneteket dob a felhasználó számára, amennyiben helytelen adatokat próbál szolgáltatni a regisztráció során. A felhasználó nem tud magának fiókot létrehozni, amíg a hibákat nem javította | A hibaüzenetek helyesen megjelennek, a regisztráció sikertelen lesz                             | Néhány hibaüzenet nem volt egyértelmű               |
+| Regisztráció helyes adatokkal    | 2024.05.21.         | A rendszer a felhasználó adatait elmenti az adatbázisba létrehozva ezzel a fiókját és visszanavigál minket a főmenübe     | Az adatbázisban megjelennek a felhasználó fiókjának adatai, ezek után be tud jelentkezni a felületen | Nem találtam hibát.                                            |
+| Bejelentkezés helytelen adatokkal| 2024.05.21.         | A felhasználót a rendszer nem engedi belépni, felhívja a figyelmet a helytelen adatokra. A felhasználó nem éri el a regisztrált fiókok funkcióit | A rendszer nem engedi beléptetni a felhasználót, hibaüzenetet dob neki                           | Nem találtam hibát.                                               |
+| Bejelentkezés helyes adatokkal   | 2024.05.21.         | A felhasználó be tud lépni a fiókjába, ezzel elérve az összes olyan funkciót, ami a szerepkörébe tartozik                  | A felhasználót tovább engedi a beléptető felületen, és megjelennek az új funkciók, amelyeket használni tud | Nem találtam hibát.                                              |
+| Kijelentkezés                    | 2024.05.21.         | Bejelentkezett felhasználó ki tud lépni a fiókjából. Miután ezt megtette, újra be kell jelentkeznie a többi funkció eléréséhez | Gombra kattintva kidob a főmenübe, és újra a bejelentkezés lesz elérhető                          | Nem találtam hibát.                                               |
+| Kurzus létrehozó oldal           | 2024.05.21.         | Az oldal segítségével a felhasználó új kurzust tud létrehozni, melyeket a többi felhasználó is el tud érni, vagy ő maga más felhasználót hozzáadni. | A kurzus létrejön, navigáció által könnyen elérhető a létrehozónak vagy más felhasználónak       | A kurzus létrehozásakor néha hiba lépett fel, ha túl hosszú volt a kurzus neve |
+| Kurzushoz rendelés               | 2024.05.21.         | A kurzushoz hozzá tudunk adni különböző felhasználókat, azonosító segítségével, így elérve, hogy lássák azok tartalmát     | A helyes azonosító megadásával az adott felhasználó csatlakozik a kurzushoz                      | Nem találtam hibát.                                             |
+| Kurzus tartalom módosítása       | 2024.05.21.         | A kurzust létrehozó személy különböző tartalmakat, leckéket tud a kurzusban létrehozni, megjeleníteni a kurzusban lévők részére | A kurzus tartalma minden hozzáadott felhasználónak helyesen és rendezetten megjelenik            | Néhány esetben a tartalmak frissítése lassan történik |
+| Kurzusra jelentkezés             | 2024.05.21.         | A felhasználók egy bizonyos kód segítségével különböző kurzusokra tudnak jelentkezni, hogy annak tartalmához hozzá tudjanak férni | Helyes kód beírásával a felhasználó jelentkezése megjelenik a kurzuson                           | Nem találtam hibát.                                              |
+| Kurzusról eltávolítás            | 2024.05.21.         | A kurzus létrehozójának lehetősége van más felhasználók eltávolítására egy adott kurzusról. Ezek után az adott felhasználó nem fogja tudni többé az adott kurzus tartalmát megtekinteni | Az eltávolítás után, az adott kurzus nem jelenik meg többé az eltávolított felhasználó kurzusai között, ahhoz nem fér hozzá | Az eltávolított felhasználó még néha kap értesítéseket a kurzusról |
+| Kurzusok megjelenítése           | 2024.05.21.         | Külön fülön, a felhasználónak lehetősége van, mind az éppen elérhető, mind a már felvett kurzusokat áttekinteni, azok között navigálni | Az oldal helyesen sorakoztatja fel mindkét esetben a kurzusokat                                  | Nem találtam hibát.                                              |
+
+Átadásra készen áll a megrendelőnek.
+
+Tesztelést végezte és írta: Sándor Dániel
+
+Befejezve: 2023.05.21.

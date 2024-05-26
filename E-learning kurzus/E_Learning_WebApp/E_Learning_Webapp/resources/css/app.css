@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Shanti&display=swap');
+
+.purple-background {
+    background-color: #6A1B9A;
+  }
+  
+  body {
+    background-color: #6A1B9A;
+  }
+  
+  .text-light-gray {
+    color: #4F545C;
+  }
+  .bg-white {
+    --tw-bg-opacity: 1;
+    background-color: #2C2F33;
+  }
+  .text-gray-700 {
+    color: white;
+    font-size: large;
+  }
+  .text-gray-600 {
+    color: white;
+    font-size: large;
+  }
+  .custom-class {
+    color: white;
+    font-size: xx-large;
+}
+.subtitle_class {
+    color: white;
+    font-size: medium;
+}
+.lgn-btn{
+    background-color: #2C2F33;
+    border-color: white;
+    color: white;
+    font-size: large;
+    border-radius: 5px;
+    font-family: "Shanti", sans-serif;
+}
+.hover:text-gray-900:hover{
+    color: white
+}
+.ml-2 {
+    margin-left: 0.5rem;
+    color: white;
+  }
+
+  .bg-gray-100{
+    background-color: #6A1B9A;
+  }

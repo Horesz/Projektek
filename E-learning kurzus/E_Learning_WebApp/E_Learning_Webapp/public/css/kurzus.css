@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Shanti&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Shanti", sans-serif;
+}
+:root {
+    --fidesz-color: orange;
+    --discordSzurke-color:#2C2F33;
+    --vilagosabbDiscorsSzürke-color:#4F545C;
+}
+.createForm{
+    padding-left: 15rem;
+}
+
+.jumbo{
+    color: #2C2F33;
+}
+.form-group{
+    color: #2C2F33;
+}
+.kurzus_create {
+    color: #2C2F33;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#login__section {
+    padding-top: 0;
+    overflow: hidden;
+}
+
+.card {
+    margin-top: 0;
+}
+
+.jegyfolgalo button {
+    --accent: fuchsia;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 1.1em;
+    background-color: #212121;
+    cursor: pointer;
+    color: white;
+    padding: 1em 2em;
+    transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+      letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
+  }
+  
+  .jegyfolgalo button:hover {
+    box-shadow: var(--hover-shadows);
+  }
+  
+  .jegyfolgalo button:active {
+    box-shadow: var(--hover-shadows), var(--accent) 0px 0px 0px 0px;
+    background-color: var(--accent);
+    transform: scale(0.95);
+  }

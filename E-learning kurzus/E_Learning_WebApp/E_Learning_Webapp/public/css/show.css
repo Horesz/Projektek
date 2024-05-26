@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Shanti&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Shanti", sans-serif;
+
+
+}
+:root {
+    --fidesz-color: orange;
+    --discordSzurke-color:#2C2F33;
+    --vilagosabbDiscorsSzürke-color:#4F545C;
+}
+body{
+    min-height: 100vh;
+    background: rgb(209, 36, 240);
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    background: rgb(241, 241, 241);
+}
+.kurzus-info{
+    background: rgb(255, 255, 255);
+
+}
